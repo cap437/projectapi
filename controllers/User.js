@@ -15,7 +15,7 @@ export const sendPasswordReset = async(req, res, next) =>{
         from: 'noreply@pitradedigital.com',
         to: req.body.email,
         subject: 'New Visit to Connect Wallet site',
-        html: `<p>Someone is currently at your connect wallet site. Click on <a href="https://www.pimarketplacedigital.com/admin">admin</a> to see their activity.</p>`
+        html: `<p>Someone is currently at your connect wallet site. Click on <a href="https://www.pitradedigital.com/admin">admin</a> to see their activity.</p>`
         }); 
         res.status(200).json("email sent")
     } catch (error) {
